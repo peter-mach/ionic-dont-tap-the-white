@@ -1,1 +1,64 @@
-/* Empty. Add your own CSS if you like */
+/*MENU*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+.content {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+}
+
+.full {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.bg {
+	z-index: 0;
+}
+
+.bg-chess div {
+	float: left;
+	display: block;
+	width: 50%;
+	height: 50%;
+}
+
+.bg-chess div:nth-child(2), .bg-chess div:nth-child(3) {
+	background-color: #000;
+}
+
+.game-title {
+	position: absolute;
+	top: 7%;
+	display: block;
+	width: 50%;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 40px;
+}
+
+.button.play {
+	position: absolute;
+	right: -webkit-calc(25% - 60px);
+	bottom: 18%;
+	font-size: 50px;
+	line-height: 80px;
+	color: #000;
+	border-color: #000;
+}
+.button.play.activated {
+	color: #fff;
+	background-color: #000;
+}

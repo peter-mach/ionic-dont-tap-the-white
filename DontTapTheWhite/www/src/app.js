@@ -2,7 +2,17 @@
 // author: Piotr Machowski
 // www: http://machowski.co
 
-angular.module('dttw', ['ionic'])
+angular.module('dttw', [
+  'ionic',
+  'ui.router',
+
+  'dttw.menu',
+
+  ])
+
+.config(['$urlRouterProvider', function($urlRouterProvider) {
+  $urlRouterProvider.otherwise('/menu');
+}])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
