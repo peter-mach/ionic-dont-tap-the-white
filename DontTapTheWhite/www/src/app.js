@@ -3,14 +3,16 @@
 // www: http://machowski.co
 
 angular.module('dttw', [
+  //libs
   'ionic',
   'ui.router',
-
+  //project specific includes
   'dttw.menu',
 
   ])
 
 .config(['$urlRouterProvider', function($urlRouterProvider) {
+  //set default view
   $urlRouterProvider.otherwise('/menu');
 }])
 

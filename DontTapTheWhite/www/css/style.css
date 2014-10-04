@@ -1,14 +1,23 @@
-/*MENU*/
+/*COMMON*/
 html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
 html, body {
 	height: 100%;
 	width: 100%;
+}
+.full {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+/*MENU*/
+.bg {
+	z-index: 0;
 }
 
 .content {
@@ -16,16 +25,6 @@ html, body {
 	z-index: 1;
 	top: 0;
 	left: 0;
-}
-
-.full {
-	width: 100%;
-	height: 100%;
-	display: block;
-}
-
-.bg {
-	z-index: 0;
 }
 
 .bg-chess div {
@@ -58,7 +57,8 @@ html, body {
 	color: #000;
 	border-color: #000;
 }
-.button.play.activated {
-	color: #fff;
-	background-color: #000;
-}
+	.button.play.activated {
+		color: #fff;
+		background-color: #000;
+	}
+
