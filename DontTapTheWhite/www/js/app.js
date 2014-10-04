@@ -2,7 +2,7 @@
 // author: Piotr Machowski
 // www: http://machowski.co
 
-angular.module('app', ['ionic'])
+angular.module('dttw', ['ionic'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -10,4 +10,4 @@ angular.module('app', ['ionic'])
       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
     }
   });
-})
+});
