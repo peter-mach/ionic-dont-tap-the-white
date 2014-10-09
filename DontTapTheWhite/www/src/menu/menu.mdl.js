@@ -13,8 +13,9 @@ angular.module('dttw.menu', [])
     });
 }])
 
-.controller('MenuCtrl', ['$scope', function($scope) {
-
-}])
-
-;
+.controller('MenuCtrl', ['$scope', '$state', function($scope, $state) {
+	$scope.onPlayTap = function () {
+		//start the game
+		$state.go('game');
+	};
+}]);

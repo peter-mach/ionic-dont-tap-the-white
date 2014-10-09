@@ -8,6 +8,7 @@ angular.module('dttw', [
   'ui.router',
   //project specific includes
   'dttw.menu',
+  'dttw.game',
 
   ])
 
