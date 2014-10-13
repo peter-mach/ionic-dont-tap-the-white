@@ -14,6 +14,9 @@ angular.module('dttw.game', [])
 }])
 
 .controller('GameCtrl', ['$scope', '$state', function($scope, $state) {
+	$scope.speed = 1.05;
+	$scope.score = 0;
+	$scope.maxScore = 0;
 
 }])
 

@@ -1,9 +1,9 @@
 /*COMMON*/
 html {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 *, *:before, *:after {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 html, body {
 	height: 100%;
@@ -62,3 +62,58 @@ html, body {
 		background-color: #000;
 	}
 
+
+/*GAME*/
+
+/*GAMEBOARD DIRECTIVE*/
+.view-port {
+	position: relative;
+}
+	.view-port .game-row {
+		height: 25%;
+		width: 100%;
+		background-color: #fff;
+		position: absolute;
+	}
+		.view-port .game-row span {
+			display: inline-block;
+			margin: 0;
+			height: 100%;
+			width: 25%;
+			background-color: #fff;
+			border: 1px solid #000;
+		}
+		.view-port .game-row .black {
+			background-color: #000;
+		}
+		.view-port .game-row .red {
+			background-color: #f00;
+		}
+		.view-port .game-row .green {
+			background-color: #0f0;
+		}
+
+
+/*ANIMATIONS*/
+@-webkit-keyframes flash {
+	0%, 50%, 100% {
+		opacity: 1;
+	}
+	25%, 75% {
+		opacity: 0.2;
+	}
+}
+
+@keyframes flash {
+	0%, 50%, 100% {
+		opacity: 1;
+	}
+	25%, 75% {
+		opacity: 0.2;
+	}
+}
+
+.flash {
+	-webkit-animation: flash 1s infinite;
+			animation: flash 1s infinite;
+}
