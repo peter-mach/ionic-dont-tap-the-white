@@ -6,9 +6,10 @@ angular.module('dttw', [
   //libs
   'ionic',
   'ui.router',
-  //project specific includes
+
+  //game specific includes
   'dttw.menu',
-  'dttw.game',
+  'dttw.game'
 
   ])
 

@@ -1,10 +1,4 @@
 /*COMMON*/
-html {
-	box-sizing: border-box;
-}
-*, *:before, *:after {
-	box-sizing: inherit;
-}
 html, body {
 	height: 100%;
 	width: 100%;
@@ -63,8 +57,6 @@ html, body {
 	}
 
 
-/*GAME*/
-
 /*GAMEBOARD DIRECTIVE*/
 .view-port {
 	position: relative;
@@ -93,6 +85,76 @@ html, body {
 			background-color: #0f0;
 		}
 
+.pause {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+.score {
+	position: absolute;
+	top: 10px;
+	left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+	margin: 0;
+	border-color: #b2b2b2;
+	background: #b2b2b2;
+	color: #fff;
+	display: inline-block;
+	padding: 0 12px;
+	min-width: 52px;
+	min-height: 47px;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 2px;
+	vertical-align: top;
+	text-align: center;
+	font-size: 26px;
+	line-height: 42px;
+}
+
+/*GAMEOVER*/
+.popup-title {
+	font-size: 22px;
+}
+
+.highscore {
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-size: 50px;
+	padding: 20px 0;
+}
+
+.popup-buttons .button.again {
+	color: #000;
+	border-color: #000;
+}
+	.popup-buttons .button.again.activated {
+		color: #fff;
+		background-color: #000;
+	}
+
+/*COUNTDOWN*/
+.countdown {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.2);
+}
+
+	.countdown span {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, 0);
+		transform: translate(-50%, 0);
+		color: #fff;
+		font-size: 50px;
+	}
 
 /*ANIMATIONS*/
 @-webkit-keyframes flash {
