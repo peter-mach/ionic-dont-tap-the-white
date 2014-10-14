@@ -1,4 +1,8 @@
 <section class="full">
 	<gameboard></gameboard>
+
 	<!-- content layer placed over gameboard -->
+	<!-- <button class="button button-outline pause" ng-click="onPauseTap()">|&nbsp;|</button> -->
+	<section class="score">{{score}}</section>
+	<section class="countdown full" ng-if="showCountdown"><span>{{countdown}}</span></section>
 </section>
