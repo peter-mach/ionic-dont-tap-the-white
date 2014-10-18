@@ -15,11 +15,11 @@ angular.module('dttw.game', [])
 
 .controller('GameCtrl', ['$scope', '$state', '$ionicPopup', '$timeout', function($scope, $state, $ionicPopup, $timeout) {
 	// game config
-	$scope.speed = 1.05;
 	$scope.score = 0;
 	$scope.showCountdown = true;
 	$scope.countdown = 'ready?';
 
+	//starting the game
 	$timeout(function(){
 		$scope.countdown = 'GO!!!';
 		$timeout(function () {
@@ -69,6 +69,4 @@ angular.module('dttw.game', [])
 		});
 	};
 
-}])
-
-;
+}]);

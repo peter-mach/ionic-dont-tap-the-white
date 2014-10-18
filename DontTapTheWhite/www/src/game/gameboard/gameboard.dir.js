@@ -8,7 +8,8 @@ angular.module('dttw.game')
 		templateUrl: 'src/game/gameboard/gameboard.html',
 		controller: function($scope, $element, $attrs, $transclude) {
 			var framerate    = 1000/60, //60 fps
-				framerateID;
+				framerateInterval,
+				gameSpeed = 1.05;
 
 			$scope.rows = [];
 
@@ -18,7 +19,7 @@ angular.module('dttw.game')
 
 			function updatePosition () {
 				for (var i = 0; i < 6; i++) {
-					$scope.rows[i].y += $scope.speed;
+					$scope.rows[i].y += gameSpeed;
 					if ($scope.rows[i].y > 100) {
 						if ($scope.rows[i].black >= 0) {
 							//game over
@@ -35,7 +36,7 @@ angular.module('dttw.game')
 			}
 
 			function destroy () {
-				clearInterval(framerateID);
+				clearInterval(framerateInterval);
 				$element.off('touchstart');
 			}
 
@@ -57,11 +58,11 @@ angular.module('dttw.game')
 
 			$scope.startGame = function () {
 				//start the game loop
-				framerateID = setInterval(updatePosition, framerate);
+				framerateInterval = setInterval(updatePosition, framerate);
 			};
 
 			$scope.stopGame = function () {
-				clearInterval(framerateID);
+				clearInterval(framerateInterval);
 			};
 
 			//registering event listeners
@@ -69,7 +70,7 @@ angular.module('dttw.game')
 			$scope.$on('game:start', $scope.startGame);
 
 		},
-		link: function($scope, element, attrs, gameCtrl) {
+		link: function($scope, element, attrs) {
 			var rowElements = [];
 
 			for (var i = 0; i < element[0].children.length; i++) {
