@@ -29,7 +29,7 @@ html, body {
 }
 
 .bg-chess div:nth-child(2), .bg-chess div:nth-child(3) {
-	background-color: #000;
+	background-color: #313437;
 }
 
 .game-title {
@@ -40,6 +40,7 @@ html, body {
 	text-align: center;
 	vertical-align: middle;
 	font-size: 40px;
+	color: #313437;
 }
 
 .button.play {
@@ -48,12 +49,12 @@ html, body {
 	bottom: 18%;
 	font-size: 50px;
 	line-height: 80px;
-	color: #000;
-	border-color: #000;
+	color: #313437;
+	border-color: #313437;
 }
 	.button.play.activated {
-		color: #fff;
-		background-color: #000;
+		color: #f8f8f2;
+		background-color: #313437;
 	}
 
 
@@ -64,7 +65,7 @@ html, body {
 	.view-port .game-row {
 		height: 25%;
 		width: 100%;
-		background-color: #fff;
+		background-color: #f8f8f2;
 		position: absolute;
 	}
 		.view-port .game-row span {
@@ -72,17 +73,17 @@ html, body {
 			margin: 0;
 			height: 100%;
 			width: 25%;
-			background-color: #fff;
-			border: 1px solid #000;
+			background-color: #f8f8f2;
+			border: 1px solid #313437;
 		}
 		.view-port .game-row .black {
-			background-color: #000;
+			background-color: #313437;
 		}
 		.view-port .game-row .red {
-			background-color: #f00;
+			background-color: #f1274e;
 		}
 		.view-port .game-row .green {
-			background-color: #0f0;
+			background-color: #a6d627;
 		}
 
 .pause {
@@ -95,12 +96,12 @@ html, body {
 	position: absolute;
 	top: 10px;
 	left: 50%;
-    -webkit-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%, 0);
+	transform: translate(-50%, 0);
 	margin: 0;
 	border-color: #b2b2b2;
 	background: #b2b2b2;
-	color: #fff;
+	color: #f8f8f2;
 	display: inline-block;
 	padding: 0 12px;
 	min-width: 52px;
@@ -128,12 +129,12 @@ html, body {
 }
 
 .popup-buttons .button.again {
-	color: #000;
-	border-color: #000;
+	color: #313437;
+	border-color: #313437;
 }
 	.popup-buttons .button.again.activated {
-		color: #fff;
-		background-color: #000;
+		color: #f8f8f2;
+		background-color: #313437;
 	}
 
 /*COUNTDOWN*/
@@ -152,7 +153,7 @@ html, body {
 		left: 50%;
 		-webkit-transform: translate(-50%, 0);
 		transform: translate(-50%, 0);
-		color: #fff;
+		color: #f8f8f2;
 		font-size: 50px;
 	}
 
